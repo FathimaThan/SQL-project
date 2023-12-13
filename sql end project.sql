@@ -166,5 +166,4 @@ WHERE lower(Book_title) LIKE '%history%';
 SELECT Branch_no, count(*) AS Employee_count
 FROM Employee
 GROUP BY Branch_no
-HAVING Employee_count > 1;
--- i used > 1 here because my table doesnt have branches with more than 5 employees, maximum count of employees in a branch is 2
+HAVING Employee_count > 5;
